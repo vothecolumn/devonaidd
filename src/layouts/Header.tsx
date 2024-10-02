@@ -42,7 +42,13 @@ const Header = ({ styleType = EHeaderStyleType.NONE, ...animationProps }: IHeade
 					<Menu>
 						{navData.map((item, index) => (
 							<li key={index}>
-								<Item type='button' styleType={styleType} to={item.link}>
+								<Item type='button' styleType={styleType} to={item.link} 
+								onClick={(event) => {
+									if (item.label==='이벤트') {
+									event.preventDefault();
+									window.open(item.link, '_blank');
+									}
+								}}>
 									{item.label}
 								</Item>
 							</li>
