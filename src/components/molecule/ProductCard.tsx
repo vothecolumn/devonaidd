@@ -77,7 +77,7 @@ const ProductComparison = () => {
   const enterpriseProduct: ProductProps = {
     title: "DevOn AIDD",
     subtitle: "Enterprise",
-    description: "개발 공정 전체에 걸쳐서 AI를 도입하여 조직에 맞게 AI를 적용하고 싶어 하는 기업",
+    description: "개발 공정 전체에 걸쳐서 AI를 도입하여\n조직에 맞게 AI를 적용하고 싶어 하는 기업",
     features: [
       { label: "자사 DevOn IDE와 연계 제공" },
       { label: "분석/설계/개발/테스트 전 공정 지원" },
@@ -153,6 +153,7 @@ const CardDescription = styled.p`
   margin-top: 16px;
   font-weight: 500;
   font-size: 24px;
+  white-space: pre-wrap;
 `;
 
 const FeatureList = styled.ul`
