@@ -22,7 +22,6 @@ const Header = ({ styleType = EHeaderStyleType.NONE, ...animationProps }: IHeade
 	const navData = [
 		{ label: 'DevOn AIDD', link: '/' },
 		{ label: '다운로드', link: '/download' },
-		{ label: '이벤트', link: 'https://connect.lgcns.com/revieweventAIcoding' }
 	];
 
 	const getLogo = (styleType: EHeaderStyleType, lightLogo: string, darkLogo: string) => {
